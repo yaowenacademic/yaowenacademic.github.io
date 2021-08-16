@@ -18,8 +18,31 @@
 <title>Yaowen Chen Academic Page</title>
 </head>
 
+<style type="text/css">
+.wrapper {
+     position: relative;
+     padding-bottom: 65.25%;
+     padding-top: 30px;
+     height: 0;
+     overflow: auto;
+     -webkit-overflow-scrolling:touch; //<<--- THIS IS THE KEY
+     border: solid black 1px;
+}
+.wrapper iframe {
+     position: fixed;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+}
+
+
+</style>
+
 <body>
-    <iframe src="academic_pages.html" onload="this.width=screen.width;this.height=screen.height;" style="border:none"></iframe>
+    <div class="wrapper">
+        <iframe src="academic_pages.html" style="border:none"></iframe>
+    </div>
 
 </body>
 
